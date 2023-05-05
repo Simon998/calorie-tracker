@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Food
 
 # Create your views here.
-# redirect function that redirects the user to the `food_list` view.
+
 def default_view(request):
     return render(request, 'home.html')
 #a view function(renders a template) that handles the POST request to add a new food item. It creates a new food object with the name and calories provided in the POST request and saves it to the database.
