@@ -5,7 +5,15 @@
 {% endblock %}
 
 {% block content %}
-  <div class="form-container">
+<nav>
+  <h2 class="logo">My Food Tracker</h2>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'add_food' %}">Add Food</a></li>
+    <li><a href="{% url 'food_list' %}">Food List</a></li>
+  </ul>
+</nav>
+  <div class="form-container"style="margin-top: 50px !important;">
     <h1>Add Food</h1>
     <form method="post">
       {% csrf_token %}
